@@ -15,6 +15,9 @@ Template used to start the project -> (https://github.com/vuejs/vuex/tree/dev/ex
 
 API mock file used -> (https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart/api)
 
+About CLI: https://br.vuejs.org/v2/guide/installation.html#CLI
+PtBR video on Youtube: [VueJS - Preparando ambiente de desenvolvimento com Vue CLI 3.0 + VSCode](https://www.youtube.com/watch?v=S-b-reTfJrU)
+
 ---------
 To follow this tutorial:
 
