@@ -18,6 +18,8 @@ API mock file used -> (https://github.com/vuejs/vuex/tree/dev/examples/shopping-
 About CLI: https://br.vuejs.org/v2/guide/installation.html#CLI
 PtBR video on Youtube: [VueJS - Preparando ambiente de desenvolvimento com Vue CLI 3.0 + VSCode](https://www.youtube.com/watch?v=S-b-reTfJrU)
 
+[Vue DevTools](https://github.com/vuejs/vue-devtools) for [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+
 ---------
 To follow this tutorial:
 
