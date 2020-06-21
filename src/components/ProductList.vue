@@ -8,25 +8,22 @@
   </div>
 </template>
 <script>
-import shop from "@/api/shop";
-import store from "@/store/index";
-
 export default {
   computed: {
     products() {
-      return store.getters.availableProducts;
+      return this.$store.getters.availableProducts;
     },
 
     loadingGif() {
-      return store.state.loading.animation;
+      return this.$store.state.loading.animation;
     },
 
     isLoading() {
-      return store.state.loading.isLoading;
+      return this.$store.state.loading.isLoading;
     }
   },
   created() {
-    store.dispatch("fetchProducts");
+    this.$store.dispatch("fetchProducts");
   }
 };
 </script>
