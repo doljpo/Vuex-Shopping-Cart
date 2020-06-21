@@ -1,21 +1,30 @@
-# shopping-cart
+Vuex-Shopping-Cart
+Simple project to practice/learn Vuex
 
-> A Vue.js project
+This project was built following the VueSchool tutorial for VueX:
 
-## Build Setup
+Vuex for everyone
 
-``` bash
-# install dependencies
-npm install
+https://vueschool.io/courses/vuex-for-everyone
 
-# serve with hot reload at localhost:8080
-npm run dev
+What is Vuex?
 
-# build for production with minification
-npm run build
+Vuex on Github
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+Template used to start the project -> (https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart)
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+API mock file used -> (https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart/api)
+
+About CLI: https://br.vuejs.org/v2/guide/installation.html#CLI PtBR video on Youtube: VueJS - Preparando ambiente de desenvolvimento com Vue CLI 3.0 + VSCode
+
+Vue DevTools for Chrome for Firefox
+
+To follow this tutorial:
+
+What this project looks like: // add a screenshot
+
+Installing needed tools/dependencies to build the project: // 2.1 vue init vueschool/webpack-template {name your project} // on following options during the template install, select Vue build: runtime and 'No' to all other questions // add screenshot
+
+// 2.2 install yarn dependencies using a package manager. i.e. yarn // add screenshot
+
+Running this project: // 3.1 clone/download this repo to your computer // 3.2 install dependencies // npm install / yarn install / your_pckg_mngr install // 3.3 run the project // npm run dev / yarn run dev / your_pckg_mngr run dev
