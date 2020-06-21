@@ -19,9 +19,9 @@ Vuex Shopping Cart guidline:
 	[X] aumentar quantidade: se o item ja existe
 	[X] nao adicionar itens sem saldo	
 	[X] diminuir quantidade do saldo
-[ ] criar sessão de carrinho (modulo):
-	[ ] apresentar itens no carrinho
-	[ ] apresentar valor total no carrinho
+[X] criar sessão de carrinho (componente):
+	[X] apresentar itens no carrinho
+	[X] apresentar valor total no carrinho
 	[ ] extra: adicionar simbolo de currency em valores
 [ ] criar logica para realizar a compra
 	[ ] apresentar uma mensagem informando compra com sucesso/erro

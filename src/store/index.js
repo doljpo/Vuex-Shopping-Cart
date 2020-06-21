@@ -17,6 +17,28 @@ export default new Vuex.Store({
     getters: {
         availableProducts(state, getters) {
             return state.products.filter(p => p.inventory > 0);
+        },
+
+        cartProducts(state, getters) {
+            return state.cart.map(cartItem => {
+                const product = state.products.find(p => p.id === cartItem.id);
+
+                return {
+                    title: product.title,
+                    price: product.price,
+                    quantity: cartItem.quantity
+                }
+            });
+        },
+
+        cartTotal(state, getters) {
+            let total = 0;
+
+            getters.cartProducts.forEach(item => {
+                total += item.price * item.quantity
+            });
+
+            return total;
         }
     },
 
@@ -38,7 +60,7 @@ export default new Vuex.Store({
             if (product.inventory <= 0) {
                 alert('Item out of stock')
             } else {
-                let cartItem = state.cart.find(p => p.productId === product.id);
+                let cartItem = state.cart.find(p => p.id === product.id);
 
                 if (cartItem) {
                     commit('incrementItemInCart', cartItem);
@@ -62,7 +84,7 @@ export default new Vuex.Store({
 
         pushProductToCart(state, productId) {
             state.cart.push({
-                productId: productId,
+                id: productId,
                 quantity: 1
             })
         },
