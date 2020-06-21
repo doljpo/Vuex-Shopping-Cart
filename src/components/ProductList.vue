@@ -4,7 +4,7 @@
     <img v-if="isLoading" :src="loadingGif" />
     <ul v-else>
       <li v-for="product in products" :key="product.id">
-        {{ product.title }} - {{ product.price }} ({{ product.inventory }})
+        {{ product.title }} - {{ product.price | currency }} ({{ product.inventory }})
         <button
           @click="addToCart(product)"
         >Add to cart</button>

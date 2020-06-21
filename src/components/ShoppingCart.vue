@@ -5,9 +5,9 @@
       <li
         v-for="product in products"
         :key="product.id"
-      >{{ product.title }} - {{ product.price }} ({{ product.quantity }})</li>
+      >{{ product.title }} - {{ product.price | currency }} ({{ product.quantity }})</li>
     </ul>
-    <p>Total: {{ total }}</p>
+    <p>Total: {{ total | currency }}</p>
   </div>
 </template>
 
