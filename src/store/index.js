@@ -34,19 +34,19 @@ export default new Vuex.Store({
             })
         },
 
-        addProductToCart(context, product) {
+        addProductToCart({ state, commit }, product) {
             if (product.inventory <= 0) {
                 alert('Item out of stock')
             } else {
-                let cartItem = context.state.cart.find(p => p.productId === product.id);
+                let cartItem = state.cart.find(p => p.productId === product.id);
 
                 if (cartItem) {
-                    context.commit('incrementItemInCart', cartItem);
+                    commit('incrementItemInCart', cartItem);
                 } else {
-                    context.commit('addProductToCart', product.id);
+                    commit('pushProductToCart', product.id);
                 }
 
-                context.commit('decrementItemInventory', product);
+                commit('decrementProductInventory', product);
             }
         }
     },
@@ -60,18 +60,18 @@ export default new Vuex.Store({
             state.loading.isLoading = isLoading;
         },
 
-        addProductToCart(state, productId) {
+        pushProductToCart(state, productId) {
             state.cart.push({
                 productId: productId,
                 quantity: 1
             })
         },
 
-        incrementItemInCart(state, product) {
-            product.quantity++
+        incrementItemInCart(state, cartItem) {
+            cartItem.quantity++
         },
 
-        decrementItemInventory(state, product) {
+        decrementProductInventory(state, product) {
             product.inventory--
         }
     }
