@@ -1,14 +1,14 @@
 Vuex Shopping Cart guidline:
 ---------------------------
 
-[ ] iniciar projeto com template vueschool/webpack-template
-[ ] instalar dependencias
-[ ] limpar boilerplate
-[ ] copiar arquivo mock da api
-[ ] listar produtos para compra na homepage utilizando vue.js
-[ ] instalar vuex
-[ ] substituir metodo de listar produtos por vuex (state, mutations)
-[ ] filtrar produtos para mostrar apenas os que possuem saldo (getters)
+[X] iniciar projeto com template vueschool/webpack-template
+[X] instalar dependencias
+[X] limpar boilerplate
+[X] copiar arquivo mock da api
+[X] listar produtos para compra na homepage utilizando vue.js
+[X] instalar vuex
+[X] substituir metodo de listar produtos por vuex (state, mutations)
+[X] filtrar produtos para mostrar apenas os que possuem saldo (getters)
 [ ] carregar produtos no index.js da store (actions)
 	[ ] extra: utilizar parameter destructuring (ES6)
 	[ ] actions são assincronas, utilizar promise
