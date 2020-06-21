@@ -13,7 +13,7 @@ Vuex Shopping Cart guidline:
 	[X] extra: utilizar parameter destructuring (ES6)
 	[X] actions são assincronas, utilizar promise
 	[X] adicionar loading por causa do assincronismo da action
-[ ] mover referencia da store para main.js, tornando uma referencia global
+[X] mover referencia da store para main.js, tornando uma referencia global
 [ ] criar logica para adicionar itens no carrinho:
 	[ ] adicionar itens: se o item não existe
 	[ ] aumentar quantidade: se o item ja existe
