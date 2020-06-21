@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Product List</h1>
-    <img v-if="loading" src="https://i.imgur.com/JfPpwOA.gif" />
+    <img v-if="isLoading" :src="loadingGif" />
     <ul v-else>
       <li v-for="product in products" :key="product.id">{{ product.title }} - {{ product.price }}</li>
     </ul>
@@ -17,8 +17,12 @@ export default {
       return store.getters.availableProducts;
     },
 
-    loading() {
-      return store.state.loading;
+    loadingGif() {
+      return store.state.loading.animation;
+    },
+
+    isLoading() {
+      return store.state.loading.isLoading;
     }
   },
   created() {

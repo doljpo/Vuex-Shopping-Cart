@@ -7,7 +7,10 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         products: [],
-        loading: false
+        loading: {
+            animation: "https://i.imgur.com/JfPpwOA.gif",
+            isLoading: false
+        }
     },
 
     getters: {
@@ -36,8 +39,8 @@ export default new Vuex.Store({
             state.products = products;
         },
 
-        setIsLoading(state, loading) {
-            state.loading = loading;
+        setIsLoading(state, isLoading) {
+            state.loading.isLoading = isLoading;
         }
     }
 })
