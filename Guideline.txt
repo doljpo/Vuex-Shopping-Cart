@@ -1,0 +1,35 @@
+Vuex Shopping Cart guidline:
+---------------------------
+
+[ ] iniciar projeto com template vueschool/webpack-template
+[ ] instalar dependencias
+[ ] limpar boilerplate
+[ ] copiar arquivo mock da api
+[ ] listar produtos para compra na homepage utilizando vue.js
+[ ] instalar vuex
+[ ] substituir metodo de listar produtos por vuex (state, mutations)
+[ ] filtrar produtos para mostrar apenas os que possuem saldo (getters)
+[ ] carregar produtos no index.js da store (actions)
+	[ ] extra: utilizar parameter destructuring (ES6)
+	[ ] actions são assincronas, utilizar promise
+	[ ] adicionar loading por causa do assincronismo da action
+[ ] mover referencia da store para main.js, tornando uma referencia global
+[ ] criar logica para adicionar itens no carrinho:
+	[ ] adicionar itens: se o item não existe
+	[ ] aumentar quantidade: se o item ja existe
+	[ ] nao adicionar itens sem saldo	
+	[ ] diminuir quantidade do saldo
+[ ] criar sessão de carrinho (modulo):
+	[ ] apresentar itens no carrinho
+	[ ] apresentar valor total no carrinho
+	[ ] extra: adicionar simbolo de currency em valores
+[ ] criar logica para realizar a compra
+	[ ] apresentar uma mensagem informando compra com sucesso/erro
+	[ ] limpar carrinho apos compra com sucesso
+
+--
+Extras:
+	[ ] Tratar para que produtos sem saldos continuem aparecendo, porem com botão add desabilitado
+	[ ] Utilizar Vuex Map Helpers 
+	[ ] Separar arquivo store/index.js em Vuex Modules
+	[ ] Adicionar Namespaces para os Vuex Modules
