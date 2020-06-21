@@ -3,9 +3,9 @@ import Vue from 'vue'
 
 Vue.use(Vuex);
 
-new Vuex.Store({
+export default new Vuex.Store({
     state: {
-
+        products: []
     },
 
     getters: {
@@ -17,6 +17,8 @@ new Vuex.Store({
     },
 
     mutations: {
-
+        setProducts(state, products) {
+            state.products = products;
+        }
     }
 })
