@@ -1,7 +1,8 @@
 <template>
   <div>
     <h1>Product List</h1>
-    <ul>
+    <img v-if="loading" src="https://i.imgur.com/JfPpwOA.gif" />
+    <ul v-else>
       <li v-for="product in products" :key="product.id">{{ product.title }} - {{ product.price }}</li>
     </ul>
   </div>
@@ -14,12 +15,14 @@ export default {
   computed: {
     products() {
       return store.getters.availableProducts;
+    },
+
+    loading() {
+      return store.state.loading;
     }
   },
   created() {
-    shop.getProducts(products => {
-      store.commit("setProducts", products);
-    });
+    store.dispatch("fetchProducts");
   }
 };
 </script>

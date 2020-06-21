@@ -9,10 +9,10 @@ Vuex Shopping Cart guidline:
 [X] instalar vuex
 [X] substituir metodo de listar produtos por vuex (state, mutations)
 [X] filtrar produtos para mostrar apenas os que possuem saldo (getters)
-[ ] carregar produtos no index.js da store (actions)
-	[ ] extra: utilizar parameter destructuring (ES6)
-	[ ] actions são assincronas, utilizar promise
-	[ ] adicionar loading por causa do assincronismo da action
+[X] carregar produtos no index.js da store (actions)
+	[X] extra: utilizar parameter destructuring (ES6)
+	[X] actions são assincronas, utilizar promise
+	[X] adicionar loading por causa do assincronismo da action
 [ ] mover referencia da store para main.js, tornando uma referencia global
 [ ] criar logica para adicionar itens no carrinho:
 	[ ] adicionar itens: se o item não existe
