@@ -12,7 +12,7 @@ export default new Vuex.Store({
             animation: "https://i.imgur.com/JfPpwOA.gif",
             isLoading: false
         },
-        status: null
+        checkoutStatus: null
     },
 
     getters: {
@@ -123,7 +123,7 @@ export default new Vuex.Store({
         },
 
         setCheckoutStatus(state, status) {
-            state.status = status;
+            state.checkoutStatus = status;
         },
 
         emptyCart(state) {

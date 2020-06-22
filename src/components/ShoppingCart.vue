@@ -8,10 +8,8 @@
       >{{ product.title }} - {{ product.price | currency }} ({{ product.quantity }})</li>
     </ul>
     <p>Total: {{ total | currency }}</p>
-    <p>
-      <button @click="checkout">Checkout</button>
-    </p>
-    <p v-if="status">{{ status }}</p>
+    <button @click="$store.dispatch('checkout')">Checkout</button>
+    <p v-if="$store.state.checkoutStatus">{{ $store.state.checkoutStatus }}</p>
   </div>
 </template>
 
@@ -26,14 +24,8 @@ export default {
       return this.$store.getters.cartTotal;
     },
 
-    status() {
-      return this.$store.state.status;
-    }
-  },
-
-  methods: {
-    checkout() {
-      return this.$store.dispatch("checkout");
+    checkoutStatus() {
+      return this.$store.state.checkoutStatus;
     }
   }
 };
