@@ -29,7 +29,7 @@ Vuex Shopping Cart guidline:
 
 --
 Extras:
-	[ ] Tratar para que produtos sem saldos continuem aparecendo, porem com botão add desabilitado
-	[ ] Utilizar Vuex Map Helpers 
+	[X] Tratar para que produtos sem saldos continuem aparecendo, porem com botão add desabilitado
+	[X] Utilizar Vuex Map Helpers 
 	[ ] Separar arquivo store/index.js em Vuex Modules
 	[ ] Adicionar Namespaces para os Vuex Modules
