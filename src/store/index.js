@@ -16,8 +16,10 @@ export default new Vuex.Store({
     },
 
     getters: {
-        availableProducts(state, getters) {
-            return state.products.filter(p => p.inventory > 0);
+        productIsInStock() {
+            return (product) => {
+                return product.inventory > 0;
+            }
         },
 
         cartProducts(state, getters) {
@@ -61,10 +63,8 @@ export default new Vuex.Store({
             })
         },
 
-        addProductToCart({ state, commit }, product) {
-            if (product.inventory <= 0) {
-                alert('Item out of stock')
-            } else {
+        addProductToCart({ state, commit, getters }, product) {
+            if (getters.productIsInStock) {
                 let cartItem = state.cart.find(p => p.id === product.id);
 
                 if (cartItem) {
