@@ -23,9 +23,9 @@ Vuex Shopping Cart guidline:
 	[X] apresentar itens no carrinho
 	[X] apresentar valor total no carrinho
 	[X] extra: adicionar simbolo de currency em valores
-[ ] criar logica para realizar a compra
-	[ ] apresentar uma mensagem informando compra com sucesso/erro
-	[ ] limpar carrinho apos compra com sucesso
+[X] criar logica para realizar a compra
+	[X] apresentar uma mensagem informando compra com sucesso/erro
+	[X] limpar carrinho apos compra com sucesso
 
 --
 Extras:

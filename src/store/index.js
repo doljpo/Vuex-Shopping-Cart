@@ -11,7 +11,8 @@ export default new Vuex.Store({
         loading: {
             animation: "https://i.imgur.com/JfPpwOA.gif",
             isLoading: false
-        }
+        },
+        status: null
     },
 
     getters: {
@@ -39,6 +40,10 @@ export default new Vuex.Store({
             });
 
             return total;
+        },
+
+        cartIsEmpty(state, getters) {
+            return state.cart.length <= 0 ? true : false;
         }
     },
 
@@ -70,6 +75,26 @@ export default new Vuex.Store({
 
                 commit('decrementProductInventory', product);
             }
+        },
+
+        checkout({ state, commit, getters }) {
+
+            if (getters.cartIsEmpty) {
+                alert('The cart is empty');
+            } else {
+
+                return new Promise((resolve, reject) => {
+                    shop.buyProducts(
+                        state.cart,
+                        () => {
+                            commit('emptyCart'),
+                                commit('setCheckoutStatus', 'success')
+                        },
+                        () => { commit('setCheckoutStatus', 'fail') }
+                    );
+
+                });
+            }
         }
     },
 
@@ -86,15 +111,23 @@ export default new Vuex.Store({
             state.cart.push({
                 id: productId,
                 quantity: 1
-            })
+            });
         },
 
         incrementItemInCart(state, cartItem) {
-            cartItem.quantity++
+            cartItem.quantity++;
         },
 
         decrementProductInventory(state, product) {
-            product.inventory--
+            product.inventory--;
+        },
+
+        setCheckoutStatus(state, status) {
+            state.status = status;
+        },
+
+        emptyCart(state) {
+            state.cart = [];
         }
     }
 })

@@ -8,6 +8,10 @@
       >{{ product.title }} - {{ product.price | currency }} ({{ product.quantity }})</li>
     </ul>
     <p>Total: {{ total | currency }}</p>
+    <p>
+      <button @click="checkout">Checkout</button>
+    </p>
+    <p v-if="status">{{ status }}</p>
   </div>
 </template>
 
@@ -20,6 +24,16 @@ export default {
 
     total() {
       return this.$store.getters.cartTotal;
+    },
+
+    status() {
+      return this.$store.state.status;
+    }
+  },
+
+  methods: {
+    checkout() {
+      return this.$store.dispatch("checkout");
     }
   }
 };
