@@ -8,10 +8,6 @@ export default new Vuex.Store({
     state: {
         products: [],
         cart: [],
-        loading: {
-            animation: "https://i.imgur.com/JfPpwOA.gif",
-            isLoading: false
-        },
         checkoutStatus: null
     },
 
@@ -51,12 +47,9 @@ export default new Vuex.Store({
 
     actions: {
         fetchProducts({ state, commit }) {
-            commit("setIsLoading", true);
-
             return new Promise((resolve, reject) => {
                 shop.getProducts(products => {
                     commit("setProducts", products);
-                    commit("setIsLoading", false);
 
                     resolve();
                 });
@@ -101,10 +94,6 @@ export default new Vuex.Store({
     mutations: {
         setProducts(state, products) {
             state.products = products;
-        },
-
-        setIsLoading(state, isLoading) {
-            state.loading.isLoading = isLoading;
         },
 
         pushProductToCart(state, productId) {

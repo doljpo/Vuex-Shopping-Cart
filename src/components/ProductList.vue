@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Product List</h1>
-    <img v-if="isLoading" :src="$store.state.loading.animation" />
+    <img v-if="loading" :src="loadingAnimation" />
     <ul v-else>
       <li v-for="product in products" :key="product.id">
         {{ product.title }} - {{ product.price | currency }} ({{ product.inventory }})
@@ -17,10 +17,16 @@
 import { mapState, mapGetters, mapActions } from "vuex";
 
 export default {
+  data() {
+    return {
+      loading: false,
+      loadingAnimation: "https://i.imgur.com/JfPpwOA.gif"
+    };
+  },
+
   computed: {
     ...mapState({
-      products: state => state.products,
-      isLoading: state => state.loading.isLoading
+      products: state => state.products
     }),
 
     ...mapGetters({
@@ -29,7 +35,8 @@ export default {
   },
 
   created() {
-    this.fetchProducts();
+    this.loading = true;
+    this.fetchProducts().then(() => (this.loading = false));
   },
 
   methods: {
