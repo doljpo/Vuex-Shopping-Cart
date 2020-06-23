@@ -15,11 +15,10 @@
 
 <script>
 import { mapState, mapGetters, mapActions } from "vuex";
-
 export default {
   computed: {
     ...mapState({
-      checkoutStatus: state => state.checkoutStatus
+      checkoutStatus: state => state.cart.checkoutStatus
     }),
 
     ...mapGetters({
