@@ -18,6 +18,8 @@ Youtube video about CLI 3.0 (PtBr): [VueJS - Preparando ambiente de desenvolvime
 
 Vue DevTools for [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
+Frontend style using [Metro4](https://metroui.org.ua/vuejs.html)
+
 To follow this tutorial:
 
 1. What this project looks like:  
