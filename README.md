@@ -1,7 +1,7 @@
 # Vuex-Shopping-Cart
 A project to practice/learn Vuex
 
-This project was built following the VueSchool tutorial for VueX:
+The initial project was built following the VueSchool tutorial for VueX:
 
 [Vuex for everyone](https://vueschool.io/courses/vuex-for-everyone)
 
@@ -11,14 +11,14 @@ Vuex on [Github](https://github.com/vuejs/vuex)
 
 Template used to start the project -> https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart
 
-API mock file used -> https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart/api
+API mock file used to simulate the store's database and the purchase action -> https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart/api
 
-About CLI: https://br.vuejs.org/v2/guide/installation.html#CLI  
-Youtube video about CLI 3.0 (PtBr): [VueJS - Preparando ambiente de desenvolvimento com Vue CLI 3.0 + VSCode](https://www.youtube.com/watch?v=S-b-reTfJrU&t=2s)
+About Vue CLI: https://br.vuejs.org/v2/guide/installation.html#CLI  
 
-Vue DevTools for [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+Vue DevTools for [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)  
+Vue DevTools for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
-Frontend style using [Metro4](https://metroui.org.ua/vuejs.html)
+CSS component library used: [Metro4](https://metroui.org.ua/vuejs.html)
 
 To follow this tutorial:
 
