@@ -4,7 +4,7 @@
     class="product-list-service d-flex flex-wrap flex-justify-center mb-4 flex-align-center"
   >
     <div class="row flex-align-center flex-justify-between">
-      <img class="scaled" src="./../assets/img/vue_logo_01.png" />
+      <img class="scaled" src="./../assets/img/vue-logo.png" />
       <h4>Vuex Shopping Cart</h4>
     </div>
     <div class="ml-auto d-flex flex-wrap flex-justify-around">
@@ -22,8 +22,6 @@ import { mapState, mapGetters, mapActions } from "vuex";
 export default {
   computed: {
     ...mapGetters({
-      products: "cartProducts",
-      total: "cartTotal",
       cartQuantity: "cartProductsQuantity"
     })
   }
