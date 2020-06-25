@@ -1,5 +1,6 @@
 <template>
-  <div id="app">
+  <div id="app" style="margin-top: 0px;">
+    <PageHeader />
     <ProductList />
     <hr />
     <ShoppingCart />
@@ -9,12 +10,14 @@
 <script>
 import ProductList from "./components/ProductList";
 import ShoppingCart from "./components/ShoppingCart";
+import PageHeader from "./components/PageHeader";
 
 export default {
   name: "app",
   components: {
     ProductList,
-    ShoppingCart
+    ShoppingCart,
+    PageHeader
   }
 };
 </script>

@@ -27,6 +27,16 @@ export default {
             });
 
             return total;
+        },
+
+        cartProductsQuantity(state, getters) {
+            let total = 0;
+
+            getters.cartProducts.forEach(product => {
+                total += product.quantity;
+            });
+
+            return total;
         }
     },
 
