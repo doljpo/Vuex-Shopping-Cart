@@ -32,7 +32,7 @@ The project is using [Metro4](https://metroui.org.ua/), if yarn didn't install i
 
 ## Extra  
 
-While developing a VueJS app, it might be useful to have the great debugging tool Vue Devtools.  
+While developing a VueJS app, it might be useful to have installed in your browser the Vue Devtools extension.  
 It's a extension for debugging VueJS applications available for Chrome and Firefox.
 
 Vue DevTools for [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)  
