@@ -5,14 +5,14 @@
     <ul v-else class="d-flex flex-justify-around product-list">
       <li v-for="product in products" :key="product.id" class="product-list-item">
         <div class="product-image">
-          <img src="./../assets/img/vuex-logo.png" />
+          <img :src="product.image" />
         </div>
         <div class="product-info">
           <div>{{ product.title }}</div>
           <div class="mt-16p mb-16p">
             <span>{{ product.price | currency }}</span>
           </div>
-          <div class="mb-16p">Item description...</div>
+          <div class="mb-16p">{{ product.description }}</div>
           <div class="pt-16p">
             <button
               :disabled="!productIsInStock(product)"
