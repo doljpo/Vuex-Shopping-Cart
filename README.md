@@ -16,7 +16,7 @@ You will need:
 
 Example using yarn:  
 
-* Download or clone the project;  
+* Download or clone this project;  
 * Open your favorite code editor and run `yarn install`;  
 * Run `yarn run dev` and that is it!
 
@@ -24,8 +24,9 @@ The project is using [Metro4](https://metroui.org.ua/), if yarn didn't install i
 
 ## Built With
 
-* [Vuex](https://vuex.vuejs.org/) - The web framework used
-* [Metro4](https://metroui.org.ua/) - CSS component library used
+* [Vue](https://vuejs.org/) - The web framework
+* [Vuex](https://vuex.vuejs.org/) - State management library
+* [Metro4](https://metroui.org.ua/) - CSS component library
 * [Webpack-Template](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart) - Template used to start the project
 * [API mock](https://github.com/vuejs/vuex/tree/dev/examples/shopping-cart/api) - API mock file used to simulate the store's database and the purchase action
 
