@@ -1,14 +1,14 @@
 <template>
   <div>
     <h1>Shopping Cart</h1>
-    <ul>
+    <ul class="cart-items">
       <li
         v-for="product in products"
         :key="product.id"
       >{{ product.title }} - {{ product.price | currency }} ({{ product.quantity }})</li>
     </ul>
     <p>Total: {{ total | currency }}</p>
-    <button @click="checkout">Checkout</button>
+    <button class="button primary" @click="checkout">Checkout</button>
     <p v-if="checkoutStatus">{{ checkoutStatus }}</p>
   </div>
 </template>
@@ -32,3 +32,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.cart-items {
+  list-style: none;
+}
+</style>

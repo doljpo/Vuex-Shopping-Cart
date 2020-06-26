@@ -2,7 +2,7 @@
   <div>
     <h1>Product List</h1>
     <img v-if="loading" src="https://i.imgur.com/JfPpwOA.gif" />
-    <ul v-else class="product-list">
+    <ul v-else class="d-flex flex-justify-around product-list">
       <li v-for="product in products" :key="product.id" class="product-list-item">
         <div class="product-image">
           <img src="./../assets/img/vuex-logo.png" />
