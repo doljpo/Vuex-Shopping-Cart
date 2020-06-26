@@ -1,10 +1,14 @@
 # # Vuex-Shopping-Cart
 
-A project to practice/learn Vuex
+A project to practice/learn Vuex, it simulates a very basic shopping page with some products and actions to add to cart and purchase.  
+
+<p align="center">
+  <img src="./src/assets/images/readme/vuex-shopping-cart.jpg" alt="Vuex Shopping Cart" width="738">
+</p>
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
