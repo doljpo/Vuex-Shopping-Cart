@@ -39,6 +39,10 @@ The project is using [Metro4](https://metroui.org.ua/), if yarn didn't install i
 While developing a VueJS app, it might be useful to have installed in your browser the Vue Devtools extension.  
 It's a extension for debugging VueJS applications available for Chrome and Firefox.
 
+<p align="center">
+  <img src="./src/assets/images/readme/vue-devtools.jpg" alt="Vuex Shopping Cart" width="738">
+</p>
+
 Vue DevTools for [Chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en)  
 Vue DevTools for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
 
